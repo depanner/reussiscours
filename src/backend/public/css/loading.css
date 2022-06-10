@@ -1,0 +1,47 @@
+#loading
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(var(--color_3));
+    color: rgb(var(--white));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading h1
+{
+    position: relative;
+}
+
+#loading h1::before
+{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 275px;
+    height: 3px;
+    background: rgb(var(--color_5));
+    animation: blink 2s infinite ease;
+}
+
+@keyframes blink
+{
+    0% 
+    {
+        opacity: 1;
+    }
+    50%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}

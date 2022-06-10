@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root
+{
+    /* palette */
+    --color_1: 142, 202, 230; /* light blue */
+    --color_2: 33, 158, 188; /* dark blue */
+    --color_3: 2, 48, 71; /* sea blue */
+    --color_4: 255, 183, 3; /* yellow */
+    --color_5: 251, 133, 0; /* orange */
+    --white: 255, 255, 255;
+    --black: 0, 0, 0;
+
+    /* font weights */
+    --font_weight_600: 600;
+    --font_weight_700: 700;
+    --font_weight_800: 800;
+    --font_weight_400: 400;
+    
+    /* font sizes */
+    --font_size_15: 15px;
+    --font_size_20: 20px;
+    --font_size_25: 25px;
+    --font_size_30: 30px;
+    --font_size_40: 40px;
+    --font_size_20: 20px;
+
+    /* letter spacings */
+    --letter_spacing_1: 1px;
+
+    /* space */
+    --space_15: 15px;
+    --space_20: 20px;
+    --space_50: 50px;
+    --space_100: 100px;
+
+    /* radius */
+    --border_radius: 10px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
