@@ -120,19 +120,23 @@
         <section id="form">
             <div class="content">
                 <div class="input__box">
-                    <input type="text" placeholder="Nom Prenom">
+                    <input id="name" type="text" placeholder="Nom Prenom">
+                    <p id="name_error">Veuillez renseigner votre nom et prenom.</p>
                 </div>
                 <div class="input__box">
-                    <input type="text" placeholder="Email">
+                    <input id="email" type="text" placeholder="Email">
+                    <p id="email_error">Veuillez renseigner votre adresse email.</p>
                 </div>
                 <div class="input__box">
-                    <input type="text" placeholder="Telephone">
+                    <input id="phone" type="text" placeholder="Telephone (facultatif)">
                 </div>
                 <div class="input__box">
-                    <textarea placeholder="Ecrivez votre message ici."></textarea>
+                    <textarea id="message" placeholder="Ecrivez votre message ici."></textarea>
+                    <p id="message_error">Veuillez ajouter un message.</p>
                 </div>
                 <div class="input__box">
-                    <input type="submit" value="ENVOYER">
+                    <input id="send" type="submit" value="ENVOYER">
+                    <span id="send_success">Votre message a bien été envoyé.</span>
                 </div>
             </div>
         </section>

@@ -389,6 +389,37 @@
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
 
+    #form .content .input__box input[type="submit"].inactive
+    {
+        display: none;
+    }
+
+    #form .content p
+    {
+        color: red;
+        font-size: var(--font_size_10);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+
+    #form .content p.active
+    {
+        opacity: 1;
+    }
+
+    #form .content span
+    {
+        color: rgb(var(--color_5));
+        font-size: var(--font_size_20);
+        font-weight: var(--font_weight_600);
+        display: none;
+    }
+
+    #form .content span.active
+    {
+        display: inline;
+    }
+
     /* Image */
 
     #image

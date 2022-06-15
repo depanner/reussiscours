@@ -18,17 +18,8 @@ else
     app.use(express.static(path.resolve('_build')))
 }
 
-app.use('/static', express.static(path.resolve('src', 'backend', 'public'))) 
-
-app.get('/index', (request, response) =>
-{
-    response.sendFile(path.resolve('_build', 'index.html'))
-})
-
-app.get('*', (request, response) =>
-{
-    response.sendFile(path.resolve('_build', 'not_found.html'))
-})
+app.use('/static', express.static(path.resolve('src', 'backend', 'public')))
+app.use(require('./router.js'))
 
 server.listen(PORT, () => 
 {
