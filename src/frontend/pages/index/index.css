@@ -6,13 +6,13 @@
     {
         display: grid;
         grid-template-areas:
-            "home webgl"
-            "help about"
-            "services services"
-            "contact contact"
-            "form image"
-            "footer footer";
-        grid-template-columns: 1fr 1fr;
+            "home home webgl webgl"
+            "help about about about"
+            "services services services services"
+            "contact contact contact contact"
+            "form form image image"
+            "footer footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     /* Home */
@@ -21,7 +21,7 @@
     {
         grid-area: home;
 
-        padding: var(--space_100);
+        padding: var(--space_50);
     }
 
     #home .content
@@ -38,7 +38,6 @@
 
         display: flex;
         align-items: center;
-        justify-content: center;
     }
 
     #home .content .logo svg
@@ -55,12 +54,11 @@
 
     #home .content h3
     {
-        font-size: var(--font_size_20);
+        font-size: var(--font_size_15);
         font-weight: var(--font_weight_600);
         letter-spacing: var(--letter_spacing_1);
-        margin-bottom: var(--space_100);
-
-        text-align: right;
+        margin-bottom: var(--space_20);
+        margin-left: var(--space_40);
     }
 
     #home .content h1
@@ -141,7 +139,7 @@
 
         color: rgb(var(--white));
         background: rgb(var(--color_3));
-        padding: var(--space_100);
+        padding: var(--space_50);
     }
 
     #about .content
@@ -291,6 +289,11 @@
         font-size: var(--font_size_20);
         font-weight: var(--font_weight_400);
         letter-spacing: var(--letter_spacing_1);
+        padding: 10px 0;
+    }
+
+    #contact .content ul
+    {
         margin-bottom: var(--space_100);
     }
 
@@ -426,8 +429,18 @@
     {
         grid-area: image;
 
-        background: url('/static/images/background.jpg');
-        background-size: cover;
+        background: rgb(var(--color_3));
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #image img
+    {
+        border-radius: var(--border_radius);
+
+        max-width: 90%;
     }
 
     /* Footer */
@@ -742,6 +755,11 @@
         font-size: var(--font_size_20);
         font-weight: var(--font_weight_400);
         letter-spacing: var(--letter_spacing_1);
+        padding: 10px 0;
+    }
+
+    #contact .content ul
+    {
         margin-bottom: var(--space_100);
     }
 
@@ -777,9 +795,18 @@
     {
         grid-area: image;
 
-        background: url('/static/images/background.jpg');
-        background-size: cover;
-        height: 400px;
+        background: rgb(var(--color_3));
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #image img
+    {
+        border-radius: var(--border_radius);
+
+        max-width: 90%;
     }
 
     /* Form */

@@ -20,10 +20,10 @@
     /* font sizes */
     --font_size_10: 10px;
     --font_size_15: 15px;
-    --font_size_20: 20px;
+    --font_size_20: 15px;
     --font_size_25: 25px;
     --font_size_30: 30px;
-    --font_size_40: 40px;
+    --font_size_40: 30px;
     --font_size_20: 20px;
 
     /* letter spacings */
@@ -32,6 +32,7 @@
     /* space */
     --space_15: 15px;
     --space_20: 20px;
+    --space_40: 40px;
     --space_50: 50px;
     --space_100: 100px;
 
